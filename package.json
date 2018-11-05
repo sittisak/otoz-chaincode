@@ -1,12 +1,12 @@
 {
   "name": "chaincode-utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "utils for chaincode",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest . --coverage --collectCoverageFrom=src/*.js"
   },
-  "author": "",
+  "author": "Sittisak churitayo",
   "license": "ISC",
   "dependencies": {
     "js-sha3": "^0.8.0",
