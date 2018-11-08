@@ -48,4 +48,16 @@ describe('Test utils', () => {
         expect(expectResolt).toEqual(false)
     })
 
+    it('is get state empty, should return true', () => {
+        const value = Buffer.from('')
+        const expectResolt = utils.isGetStateEmpty(value)
+        expect(expectResolt).toEqual(true)
+    })
+
+    it('is get state empty, should return false', () => {
+        const value = Buffer.from('1234')
+        const expectResolt = utils.isGetStateEmpty(value)
+        expect(expectResolt).toEqual(false)
+    })
+
 })

@@ -21,10 +21,19 @@ const checkArgsLength = (array, expectedLength) => {
     return false
 }
 
+const isGetStateEmpty = (value) => {
+    if (typeof value === 'undefined' || value.toString() === '') {
+        return true
+    }
+    return false
+}
+
+
 module.exports = {
     toBuf,
     objToBuf,
     bufToObj,
     bufToFloat,
-    checkArgsLength
+    checkArgsLength,
+    isGetStateEmpty
 }
