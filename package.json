@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "utils for chaincode",
   "main": "lib/index.js",
+  "bin": {
+    "chaincode": "./src/commands.js"
+  },
   "scripts": {
     "test": "jest . --coverage --collectCoverageFrom=src/*.js"
   },
